@@ -1,5 +1,4 @@
 import java.util.HashMap;
-
 public class GenericATM implements ATM<BankName, WithdrawalMode> {
     private double balance;
     private final HashMap<String, String> cardPinMap = new HashMap<>();
