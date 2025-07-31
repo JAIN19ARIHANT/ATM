@@ -14,7 +14,7 @@ public class GenericATM implements ATM<BankName, WithdrawalMode> {
 
     @Override
     public void withdrawMoney(BankName bank, WithdrawalMode mode, double amount, String pin) {
-        if (!validatePin("1234-5678-9101", pin)) {
+        if (!validatePin("1234-5678-9000", pin)) {
             System.out.println(bank + ": Invalid PIN.");
             return;
         }
@@ -37,7 +37,7 @@ public class GenericATM implements ATM<BankName, WithdrawalMode> {
 
     @Override
     public double checkBalance(BankName bank, String pin) {
-        if (!validatePin("1234-5678-9101", pin)) {
+        if (!validatePin("1234-5678-9000", pin)) {
             System.out.println(bank + ": Invalid PIN.");
             return -1;
         }
